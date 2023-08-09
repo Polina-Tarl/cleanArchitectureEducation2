@@ -1,4 +1,4 @@
-package ru.tarlycheva.weather.domain.api
+package ru.tarlycheva.weather.data.api
 
 import retrofit2.Response
 import retrofit2.http.GET

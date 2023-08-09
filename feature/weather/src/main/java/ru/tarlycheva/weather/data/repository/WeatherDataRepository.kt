@@ -3,7 +3,7 @@ package ru.tarlycheva.weather.data.repository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.Response
-import ru.tarlycheva.weather.domain.api.WeatherService
+import ru.tarlycheva.weather.data.api.WeatherService
 import ru.tarlycheva.weather.domain.model.WeatherData
 import ru.tarlycheva.weather.domain.repository.IWeatherDataRepository
 import javax.inject.Inject
