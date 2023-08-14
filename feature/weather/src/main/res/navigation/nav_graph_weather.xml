@@ -5,10 +5,15 @@
     android:id="@+id/nav_graph_weather"
     app:startDestination="@id/weatherFragment">
 
+    <include app:graph="@navigation/nav_graph_user_weather" />
+
+    <action
+        android:id="@id/action_to_user_weather_fragment"
+        app:destination="@id/nav_graph_user_weather" />
+
     <fragment
         android:id="@+id/weatherFragment"
         android:name="ru.tarlycheva.weather.presentation.WeatherFragment"
-        tools:layout="@layout/fragment_weather">
-    </fragment>
+        tools:layout="@layout/fragment_weather"></fragment>
 
 </navigation>

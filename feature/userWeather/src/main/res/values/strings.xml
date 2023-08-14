@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="sochi_name">Сочи</string>
+    <string name="city_name">Краснодар</string>
     <string name="country_name">Россия</string>
     <string name="loading_title_info">Loading</string>
-    <string name="button_user_weather">Хочешь узнать погоду в ТВОЕМ городе?</string>
 </resources>

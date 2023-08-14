@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "ru.tarlycheva.cleanarchitecture"
-        minSdk 26
+        minSdk 33
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -42,6 +42,7 @@ dependencies {
 
     implementation project(path: ':feature:weather')
     implementation project(path: ':feature:welcome')
+    implementation project(path: ':feature:userWeather')
     implementation project(path: ':core')
     implementation project(path: ':core:navigation')
 

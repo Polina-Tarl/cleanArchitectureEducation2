@@ -3,21 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/rootFragment">
+    app:startDestination="@id/nav_graph_welcome">
 
-    <include app:graph="@navigation/nav_graph_welcome"/>
+    <include app:graph="@navigation/nav_graph_welcome" />
+    <include app:graph="@navigation/nav_graph_weather" />
+    <include app:graph="@navigation/nav_graph_user_weather" />
 
     <action
         android:id="@id/action_to_welcome_fragment"
         app:destination="@id/nav_graph_welcome" />
 
-    <fragment
-        android:id="@+id/rootFragment"
-        android:name="ru.tarlycheva.cleanarchitecture2.fragments.RootFragment"
-        android:label="@string/root_fragment_label"
-        tools:layout="@layout/fragment_root">
+    <action
+        android:id="@id/action_to_weather_fragment"
+        app:destination="@id/nav_graph_weather" />
 
-    </fragment>
+    <action
+        android:id="@id/action_to_user_weather_fragment"
+        app:destination="@id/nav_graph_user_weather" />
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/rootFragment"-->
+    <!--        android:name="ru.tarlycheva.cleanarchitecture2.fragments.RootFragment"-->
+    <!--        android:label="@string/root_fragment_label"-->
+    <!--        tools:layout="@layout/fragment_root">-->
+
+    <!--    </fragment>-->
 
 
 </navigation>

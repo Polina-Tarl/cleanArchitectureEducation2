@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_Location_title">Хотите узнать погоду?</string>
+    <string name="notification_Location_text">Например, в %s</string>
+</resources>

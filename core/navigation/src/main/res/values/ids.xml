@@ -2,4 +2,5 @@
 <resources>
     <item name="action_to_welcome_fragment" type="id" />
     <item name="action_to_weather_fragment" type="id" />
+    <item name="action_to_user_weather_fragment" type="id" />
 </resources>
