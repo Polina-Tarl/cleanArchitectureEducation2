@@ -1,9 +1,9 @@
-package ru.tarlycheva.common.data.repository
+package ru.tarlycheva.data.repository
 
 import retrofit2.Response
-import ru.tarlycheva.weather.data.api.WeatherService
-import ru.tarlycheva.common.domain.model.WeatherData
-import ru.tarlycheva.common.domain.repository.IWeatherDataRepository
+import ru.tarlycheva.data.api.WeatherService
+import ru.tarlycheva.domain.model.WeatherData
+import ru.tarlycheva.domain.repository.IWeatherDataRepository
 import javax.inject.Inject
 
 class WeatherDataRepository @Inject constructor(

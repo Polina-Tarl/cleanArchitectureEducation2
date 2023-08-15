@@ -1,13 +1,15 @@
-package ru.tarlycheva.common.data.di.modules
+package ru.tarlycheva.data.di.modules
 
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
-import ru.tarlycheva.common.data.repository.WeatherDataRepository
-import ru.tarlycheva.weather.data.api.WeatherService
-import ru.tarlycheva.common.domain.repository.IWeatherDataRepository
+import ru.tarlycheva.data.repository.WeatherDataRepository
+import ru.tarlycheva.data.api.WeatherService
+import ru.tarlycheva.data.useCase.WeatherDataUseCase
+import ru.tarlycheva.domain.repository.IWeatherDataRepository
+import ru.tarlycheva.domain.useCase.IWeatherDataUseCase
 import javax.inject.Singleton
 
 
@@ -25,5 +27,10 @@ object WeatherModule {
     @Singleton
     fun provideWeatherRepository(api: WeatherService): IWeatherDataRepository =
         WeatherDataRepository(api)
+
+    @Provides
+    @Singleton
+    fun provideWeatherUseCase(repository: WeatherDataRepository): IWeatherDataUseCase =
+        WeatherDataUseCase(repository)
 
 }

@@ -8,13 +8,13 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import ru.tarlycheva.common.domain.model.WeatherData
-import ru.tarlycheva.common.domain.useCase.WeatherDataUseCase
+import ru.tarlycheva.domain.model.WeatherData
+import ru.tarlycheva.domain.useCase.IWeatherDataUseCase
 import javax.inject.Inject
 
 @HiltViewModel
 class WeatherViewModel @Inject constructor(
-    private val weatherDataUseCase: WeatherDataUseCase
+    private val weatherDataUseCase: IWeatherDataUseCase
 ) : ViewModel() {
 
     private val _loading: MutableLiveData<Pair<Boolean, Int>> =

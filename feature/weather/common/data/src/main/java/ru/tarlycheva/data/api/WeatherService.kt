@@ -1,9 +1,9 @@
-package ru.tarlycheva.weather.data.api
+package ru.tarlycheva.data.api
 
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
-import ru.tarlycheva.common.domain.model.WeatherData
+import ru.tarlycheva.domain.model.WeatherData
 
 interface WeatherService {
 

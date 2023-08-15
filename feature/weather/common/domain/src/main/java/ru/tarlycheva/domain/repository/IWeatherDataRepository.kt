@@ -1,7 +1,7 @@
-package ru.tarlycheva.common.domain.repository
+package ru.tarlycheva.domain.repository
 
 import retrofit2.Response
-import ru.tarlycheva.common.domain.model.WeatherData
+import ru.tarlycheva.domain.model.WeatherData
 
 interface IWeatherDataRepository {
 

@@ -42,6 +42,8 @@ dependencies {
 
     implementation project(path: ':core')
     implementation project(path: ':core:navigation')
+    implementation project(path: ':feature:weather:common:data')
+    implementation project(path: ':feature:weather:common:domain')
     implementation project(path: ':feature:weather:sochi')
     implementation project(path: ':feature:weather:userWeather')
     implementation project(path: ':feature:welcome')

@@ -1,4 +1,4 @@
-package ru.tarlycheva.common.domain.model
+package ru.tarlycheva.domain.model
 
 data class WeatherData(
     val current: CurrentWeather? = null

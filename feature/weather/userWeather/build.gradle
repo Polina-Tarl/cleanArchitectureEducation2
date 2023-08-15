@@ -39,6 +39,7 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
 
     implementation project(path: ':core')
+    implementation project(path: ':feature:weather:common:domain')
     implementation project(path: ':feature:weather:common')
 
     implementation 'androidx.core:core-ktx:1.7.0'
